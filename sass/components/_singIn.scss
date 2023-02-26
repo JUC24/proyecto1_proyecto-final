@@ -1,0 +1,211 @@
+
+
+.singIn-container{
+  font-weight: 500;
+  width: auto;
+  display: grid;
+  place-content: center;
+}
+
+.singIn_form{
+  width: auto;
+  background: #FFF;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #5f8a33
+}
+
+.singIn_title{
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.singIn_title:before{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #000;
+  left: 0;
+}
+
+.singIn_subtitle{
+  display: flex;
+  font-size: 18px;
+  color: cadetblue;
+}
+
+.singIn_btns-form{
+  display: grid;
+  gap: .8rem;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 25px;
+}
+
+.singIn_input{
+  position: relative;
+  width: 100%;
+  padding: 22px 12px 6px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.singIn_a{
+  float: right;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.singIn_field{
+  visibility: hidden;
+}
+
+.singIn_btn{
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.singIn_btn-changes{
+  background-color: #5f8a33;
+  color: #FFF;
+}
+
+.singIn_btn-changes1{
+  background-color: #FFF;
+  color: #5f8a33;
+  border:#5f8a33 solid 1px;
+}
+
+.singIn_span{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  color:#5f8a33;
+}
+
+.singIn_span::before,
+.singIn_span::after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin: auto;
+}
+
+.singIn_span::before{
+  margin-left: 10px;
+}
+
+.singIn_span::after{
+  margin-right: 10px;
+}
+
+@media (min-width:768px) {
+  .singIn-container{
+    display: grid;
+    place-content: center;
+  }
+
+  .singIn_form{
+    display: grid;
+    width: 72vh;
+    height: 662px;
+    align-items: center;
+  }
+
+  .singIn_title{
+    font-size: 50px;
+  }
+
+  .singIn_subtitle{
+    font-size: 25px;
+  }
+
+  .singIn_field{
+    font-size: 16px;
+    visibility: visible;
+  }
+
+  .singIn_input{
+    height: 3rem;
+  }
+
+  #input::placeholder{
+    visibility: hidden;
+  }
+
+  .singIn_a{
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .singIn_span{
+    font-size: 24px;
+  }
+
+  .singIn_btn{
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+@media (min-width:1024px){
+  .singIn-container{
+    display: grid;
+    place-content: center;
+  }
+
+  .singIn_form{
+    width: 87vh;
+    height: 100vh;
+  }
+
+  .singIn_title{
+    font-size: 60px;
+  }
+
+  .singIn_subtitle{
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  .singIn_field{
+    font-size: 20px;
+    visibility: visible;
+  }
+
+  .singIn_input{
+    height: 8vh;
+  }
+
+  #input::placeholder{
+    visibility: hidden;
+  }
+
+  .singIn_a{
+    font-size: 30px;
+    margin-top: 18px;
+  }
+
+  .singIn_btns-form{
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .singIn_btn{
+    height: 12vh;
+    font-size: 2rem;
+  }
+
+  .singIn_span{
+    font-size: 30px;
+  }
+}
