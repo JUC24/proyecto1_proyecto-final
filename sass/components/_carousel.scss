@@ -1,43 +1,36 @@
-body {
-  margin: 0; }
-
-h1 {
-  margin: 20px 0px 40px 25px; }
-
-.componentConteiner {
-  border-bottom: 4px solid grey; }
-
-.componentConteiner--titleName {
-  margin: 15px 0px 10px 20px; }
-
 .carousel {
-  position: relative; }
+  position: relative;
+}
 
 .carousel__container {
   padding: 0 20px 0 80px;
   display: flex;
   overflow-x: hidden;
-  scroll-behavior: smooth;
-  position: relative; }
+  scroll-behavior:smooth;
+  position: relative;
+}
 
 .card {
   border: grey solid 2px;
   flex: 0 0 auto;
   width: 70%;
   margin-right: 20px;
-  position: relative; }
+  position: relative;
+}
 
 .card__image {
   width: 100%;
   height: 350px;
   overflow: hidden;
-  background-color: grey; }
+  background-color: grey;
+}
 
 .card__cta {
   text-decoration: none;
   color: black;
   font-size: 24px;
-  padding: 0 50% 5% 0; }
+  padding: 0 50% 5% 0;
+}
 
 .card__cta::after {
   position: absolute;
@@ -45,24 +38,29 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  content: ""; }
+  content: "";
+}
 
 .card:hover {
   border: black solid 3px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .card__info {
   width: 90%;
-  padding: 15px; }
+  padding: 15px;
+}
 
 .card__info--name {
   font-size: 24px;
-  margin: 10px 0; }
+	margin: 10px 0;
+}
 
 .card__info--description {
   width: 100%;
   overflow: hidden;
-  margin: 5px 0; }
+  margin: 5px 0;
+}
 
 .carousel__arrow--previous,
 .carousel__arrow--next {
@@ -76,7 +74,8 @@ h1 {
   background-color: black;
   color: white;
   opacity: .3;
-  z-index: 3; }
+  z-index: 3;
+}
 
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -88,49 +87,78 @@ h1 {
   width: 1px; }
 
 .carousel__arrow--next::before {
-  content: url(./../../images/iconos/chevron-right-small.svg); }
+  content: url(./../../images/iconos/chevron-right-small.svg);
+}
 
 .carousel__arrow--previous::before {
-  content: url(./../../images/iconos/chevron-left-small.svg); }
+  content: url(./../../images/iconos/chevron-left-small.svg);
+}
 
 .carousel__arrow--next {
-  right: 0;
-  border-radius: 3px 0 0 3px; }
+  right: 0;  
+  border-radius: 3px 0 0 3px;
+}
 
 .carousel__arrow--next:hover,
 .carousel__arrow--previous:hover {
-  opacity: 1; }
+  opacity: 1;
+}
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .card {
-    width: 70%; } }
+    width: 70%;
+  }
+}
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width:481px) and (max-width: 767px) {
   .card {
-    width: 47%; } }
+    width: 47%;
+  }
+}
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width:768px) and (max-width: 1023px) {
+
   .card {
     width: 43%;
-    margin-right: 40px; }
+    margin-right: 40px;
+  }
+
   .card__cta {
     font-size: 30px;
-    padding: 0 50% 5% 0; }
-  .card__info {
-    width: 100%; }
-  .card__info--name {
-    font-size: 26px; }
-  .card__info--description {
-    width: 90%; }
-  .carousel__arrow--next::before {
-    content: url(./../../images/iconos/chevron-right-medium.svg); }
-  .carousel__arrow--previous::before {
-    content: url(./../../images/iconos/chevron-left-medium.svg); } }
+    padding: 0 50% 5% 0;
+  }
 
-@media (min-width: 1024px) {
-  .card {
-    width: 20%; }
-  .carousel__arrow--next::before {
-    content: url(./../../images/iconos/arrow-right.svg); }
-  .carousel__arrow--previous::before {
-    content: url(./../../images/iconos/arrow-left.svg); } }
+  .card__info {
+    width: 100%;
+  }
+
+  .card__info--name {
+    font-size: 26px;
+  }
+
+  .card__info--description {
+    width: 90%;
+  }
+
+	.carousel__arrow--next::before {
+		content: url(./../../images/iconos/chevron-right-medium.svg);
+	}
+	
+	.carousel__arrow--previous::before {
+		content: url(./../../images/iconos/chevron-left-medium.svg);
+	}
+}
+
+@media (min-width:1024px) {
+	.card {
+    width: 20%;
+  }
+	
+	.carousel__arrow--next::before {
+		content: url(./../../images/iconos/arrow-right.svg);
+	}
+	
+	.carousel__arrow--previous::before {
+		content: url(./../../images/iconos/arrow-left.svg);
+	}
+}
