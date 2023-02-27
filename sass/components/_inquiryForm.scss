@@ -41,7 +41,7 @@
   background-color: rgb(41, 38, 38);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 320px) {
   .inquiryForm{
     width: 100%;
   }
