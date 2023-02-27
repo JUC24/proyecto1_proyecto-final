@@ -100,7 +100,7 @@ h1 {
 .singIn__span::after {
   margin-right: 10px; }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .singIn-container {
     display: grid;
     place-content: center; }
@@ -142,8 +142,6 @@ h1 {
   .singIn__field {
     font-size: 20px;
     visibility: visible; }
-  .singIn__input {
-    height: 8vh; }
   #input::placeholder {
     visibility: hidden; }
   .singIn__link {
