@@ -33,18 +33,18 @@
   
 <!-- Buttons -->
 
-  <div class="componentConteiner"><!--Conponent conteiner-->
-    <h2 class="componentConteiner--titleName">Light and Dark Button (with hover property)</h2>
+  <div class="componentContainer"><!--Conponent conteiner-->
+    <h2 class="componentConteiner__titleName">Light and Dark Button (with hover property)</h2>
     <div class="buttonsArea">
       <button class="darkButton" type="button" >Button</button>
       <button class="lightButton" type="button" >Button</button>
     </div>
   </div>
-  
+
 <!-- Footer -->
 
-  <div class="componentConteiner"><!--Conponent conteiner-->
-    <h2 class="componentConteiner--titleName">Footer</h2>
+  <div class="componentContainer"><!--Conponent conteiner-->
+    <h2 class="componentConteiner__titleName">Footer</h2>
     <div>
       <!-- footer starts here -->
       <div class="footer-container">
@@ -100,11 +100,12 @@
           </div>
       </div>
     </div>
+  </div>
 
   <!-- Inquiry Form -->
   
-  <div class="componentConteiner"><!--Conponent conteiner-->
-    <h2 class="componentConteiner--titleName">Inquiry Form</h2>
+  <div class="componentContainer"><!--Conponent conteiner-->
+    <h2 class="componentConteiner__titleName">Inquiry Form</h2>
     <div>
       <form class="inquiryForm">
         <div>
@@ -127,10 +128,52 @@
           <button class="inquiryForm__button" type="submit">Submit</button>
         </section>
       </form>
-
     </div><!--component goes here-->
   </div>
-  
+
+
+  <!-- Buttons -->
+
+  <div class="componentContainer"><!--Conponent conteiner-->
+    <h2 class="componentConteiner__titleName">Tabs</h2>
+    <div>
+      <div class="tabs">
+        <div role="tablist" aria-labelledby="tablist-1" class="automatic">
+          <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
+            <span class="focus">Hotels</span>
+          </button>
+          <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
+            <span class="focus">Destinies</span>
+          </button>
+        </div>
+      
+        <div id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Rerum quibusdam sapiente fugit aspernatur architecto voluptate,
+            aperiam libero, dicta laboriosam perferendis voluptatibus, dolore facere.
+            Inventore illum aperiam totam recusandae voluptates sunt.
+          </p>
+        </div>
+        <div id="tabpanel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" class="is-hidden">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quidem ab et sit officia labore quaerat alias incidunt quam unde! Quae alias atque maiores
+            ducimus pariatur voluptate aut, placeat ipsum aperiam?
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!--<div class="componentContainer"><!--Conponent conteiner
+    <h2 class="componentConteiner__titleName"></h2>
+    <div>
+    </div>
+  </div>-->
+
+
   <!--Carousel-->
   
   <div class="componentConteiner"><!--Conponent conteiner-->
@@ -216,5 +259,6 @@
 </body>
 
 <script src="scripts/carousel.js"></script>
+<script src="scripts/tabsMain.js"></script>
 
 </html>
