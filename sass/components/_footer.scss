@@ -1,14 +1,4 @@
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-footer {
+.footer-container {
   margin-top: 50px;
   width: 100%;
   color:white;
@@ -85,7 +75,7 @@ footer {
 }
 
 .footer__bottom {
-  background-color: lightgray;
+  background-color: rgba(181, 181, 181, 0.458);
   display: flex;
   justify-content:right;
   padding: 15px;
@@ -101,6 +91,16 @@ footer {
   align-items: center;
   margin: 0 10px; 
 	list-style: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .footer__bottom-social--whatsapp::before {
