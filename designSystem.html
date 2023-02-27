@@ -6,14 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="public/css/styles.css">
-  <title>Document</title>
+  <title>Desing system</title>
 </head>
 
 <body>
   <h1>Design system</h1>
-  <div class="componentConteiner"><!--Conponent conteiner-->
-    <h2 class="componentConteiner--titleName">Component Name</h2>
-    <div></div><!--component goes here-->
+  <div class="componentContainer"><!--Conponent conteiner-->
+      <!--this is the sing in form-->
+    <h2 class="componentContainer__titleName">Sing In</h2>
+    <div class="singIn-container">
+      <form class="singIn__form">
+        <h1 class="singIn__title">Sing In <span class="singIn__subtitle">Please enter your details</span></h1>
+        <label for="email" class="singIn__field">Email</label>
+        <input type="email" name="email" class="singIn__input" id="input" placeholder="Email" required>
+        <label for="Password" class="singIn__field">Password</label>
+        <input type="password" name="password" class="singIn__input" id="input" placeholder="Password" required>
+        <a href="#" class="singIn__link">Forgot Password?</a>
+        <div class="singIn__btns-form">
+          <button class="singIn__btn singIn__btn-changes">Sign in</button> 
+          <span class="singIn__span">Or</span>
+          <button class="singIn__btn singIn__btn-variant">Create an account</button>
+        </div>
+      </form>
+    </div>
   </div>
   
 <!-- Buttons -->
