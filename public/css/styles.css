@@ -46,3 +46,11 @@ h1 {
 
 .inquiryForm__button:hover {
   background-color: #292626; }
+
+@media screen and (max-width: 480px) {
+  .inquiryForm {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .inquiryForm {
+    width: 30%; } }
