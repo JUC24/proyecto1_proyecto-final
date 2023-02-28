@@ -9,3 +9,5 @@ Stephannie Garro Miranda
 Óscar Corella Camacho
 
 Jason Umaña Campos
+
+Desing System: https://juc24.github.io/proyecto1_proyecto-final/designSystem.html
