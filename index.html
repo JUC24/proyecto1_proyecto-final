@@ -16,7 +16,7 @@
       <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
       <label for="nav-checkbox" class="toggle">
         <img class="menu" src="/images/iconos/menu.svg" alt>
-        <img class="close" src="/images/iconos/x.svg" alt>
+        <img  class="close" src="/images/iconos/x.svg" alt>
       </label>
       <ul class="menu">
         <li>
@@ -29,11 +29,35 @@
           <a class="menu__link" href="/pages/hotelsList.html">Hotels</a>
         </li>
         <li>
-          <a class="menu__link" href="/pages/login.html">Sign Up</a>
+          <button id="myBtn" class='darkButton'>Sing In</button>
         </li>
       </ul>
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close__modal">&times;</span>
+               <!--this is the sing in form-->
+          <div class="singIn-container">
+            <form class="singIn__form">
+              <h1 class="singIn__title">Sing In <span class="singIn__subtitle">Please enter your details</span></h1>
+              <label for="email" class="singIn__field">Email</label>
+              <input type="email" name="email" class="singIn__input" id="input" placeholder="Email" required>
+              <label for="Password" class="singIn__field">Password</label>
+              <input type="password" name="password" class="singIn__input" id="input" placeholder="Password" required>
+              <a href="#" class="singIn__link">Forgot Password?</a>
+              <div class="singIn__btns-form">
+                <button class="singIn__btn singIn__btn-changes">Sign in</button> 
+                <span class="singIn__span">Or</span>
+                <button class="singIn__btn singIn__btn-variant">Create an account</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 </body>
+<script src="scripts/SingIn.js"></script>
 
 </html>
