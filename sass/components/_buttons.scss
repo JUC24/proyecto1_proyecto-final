@@ -6,11 +6,11 @@
 }
 
 .darkButton {
-  background-color: black;
+  background-color: #e66b00;
   color: white;
   padding: 12px 24px;
   border-radius: 10px;
-  border: 3px solid black;
+  border: solid #e66b00;
   border-width: thin;
   margin: 10px 0;
   font-family: 'Roboto';
@@ -42,7 +42,7 @@
 }
 
 .darkButton:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #fa8620f5;
 }
 
 .lightButton:hover {

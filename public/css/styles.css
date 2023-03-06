@@ -7,6 +7,10 @@ body * {
   margin: 0;
   padding: 0; }
 
+.page__content {
+  width: 80vw;
+  margin: 0 auto; }
+
 .titles {
   font-size: 44px;
   margin: 20px;
@@ -71,6 +75,11 @@ h1 {
   margin-right: 20px;
   position: relative; }
 
+.card__img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain; }
+
 .card__image {
   width: 100%;
   height: 350px;
@@ -92,7 +101,7 @@ h1 {
   content: ""; }
 
 .card:hover {
-  border: black solid 3px;
+  border: #e66b00 solid 5px;
   cursor: pointer; }
 
 .card__info {
@@ -117,9 +126,10 @@ h1 {
   padding: 3px;
   font-weight: bold;
   border-radius: 0 3px 3px 0;
-  background-color: black;
+  background-color: #e66b00;
+  border-color: #e66b00;
   color: white;
-  opacity: .3;
+  opacity: .7;
   z-index: 3; }
 
 .visually-hidden {
@@ -363,11 +373,11 @@ h1 {
   width: fit-content; }
 
 .darkButton {
-  background-color: black;
+  background-color: #e66b00;
   color: white;
   padding: 12px 24px;
   border-radius: 10px;
-  border: 3px solid black;
+  border: solid #e66b00;
   border-width: thin;
   margin: 10px 0;
   font-family: 'Roboto';
@@ -397,7 +407,7 @@ h1 {
   text-align: center; }
 
 .darkButton:hover {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: #fa8620f5; }
 
 .lightButton:hover {
   background-color: #D9D9D9; }
@@ -419,7 +429,7 @@ h1 {
   margin-top: 50px;
   width: 100%;
   color: white;
-  background-color: gray;
+  background-color: #32cd32;
   margin-bottom: 50px; }
 
 .footer {
@@ -439,7 +449,7 @@ h1 {
   margin: 0 auto;
   border: none;
   padding: 10px 8px;
-  background-color: gray;
+  background-color: #32cd32;
   color: white;
   font-weight: 700;
   display: block; }
@@ -586,11 +596,12 @@ h1 {
   display: none; }
 
 .menu {
+  height: 120px;
   display: flex;
   gap: 51px;
-  list-style: none;
   justify-content: space-evenly;
-  background-color: gray;
+  list-style: none;
+  background-color: #32cd32;
   align-items: center; }
 
 .menu__link {
