@@ -1,13 +1,50 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Roboto', sans-serif, Times, serif; }
 
 body * {
   margin: 0;
   padding: 0; }
 
+.titles {
+  font-size: 44px;
+  margin: 20px;
+  color: #32cd32; }
+
+.text {
+  margin: 25px 20px 45px;
+  font-size: 20px;
+  text-align: justify; }
+
+.subtitles {
+  font-size: 36px;
+  margin: 20px;
+  color: #e66b00; }
+
 h1 {
   margin: 20px 0px 40px 25px; }
+
+.imgGeneralConteiner--rows {
+  width: 100%;
+  margin: 0 auto; }
+
+.imgConteiner {
+  width: 100%;
+  margin: 0px auto 20px auto; }
+
+.imgConteiner--img {
+  width: 100%; }
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .imgGeneralConteiner--rows {
+    display: flex;
+    gap: 5px; } }
+
+@media screen and (max-width: 1520px) and (min-width: 769px) {
+  .prueba {
+    display: flex;
+    gap: 10px; } }
 
 .componentContainer {
   border-bottom: 8px solid cyan;
@@ -17,7 +54,8 @@ h1 {
   margin: 15px 0px 10px 20px; }
 
 .carousel {
-  position: relative; }
+  position: relative;
+  margin-bottom: 50px; }
 
 .carousel__container {
   padding: 0 20px 0 80px;
@@ -598,7 +636,7 @@ h1 {
   margin: 0;
   margin-top: 4px;
   padding: 3px 3px 4px;
-  border: 1px solid gray;
+  border: 2px solid gray;
   border-bottom: 2px solid white;
   border-radius: 5px 5px 0 0;
   overflow: visible;
@@ -610,8 +648,8 @@ h1 {
   padding: 2px 2px 4px;
   margin-top: 0;
   border-width: 2px;
-  border-top-width: 6px;
-  border-top-color: gray;
+  border-top-width: 10px;
+  border-top-color: #e66b00;
   border-bottom-color: white;
   background: white; }
 
@@ -620,15 +658,17 @@ h1 {
 
 [role="tab"] span.focus {
   display: inline-block;
-  margin: 2px;
-  padding: 4px 6px; }
+  margin: 10px;
+  padding: 4px 6px;
+  font-size: 20px;
+  color: #e66b00; }
 
 [role="tab"]:hover span.focus,
 [role="tab"]:focus span.focus,
 [role="tab"]:active span.focus {
   padding: 2px 4px;
-  border: 2px solid gray;
-  border-radius: 3px; }
+  border: 3px solid #e66b00;
+  border-radius: 4px; }
 
 [role="tabpanel"] {
   padding: 5px;
@@ -642,6 +682,3 @@ h1 {
 
 [role="tabpanel"].is-hidden {
   display: none; }
-
-[role="tabpanel"] p {
-  margin: 0; }
