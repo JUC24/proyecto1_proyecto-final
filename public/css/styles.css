@@ -10,10 +10,11 @@ body * {
 .page__content {
   width: 80vw;
   margin: 0 auto; }
+
 .titles {
   font-size: 44px;
   margin: 20px;
-  color: #32cd32; }
+  color: #40752A; }
 
 .text {
   margin: 25px 20px 45px;
@@ -23,7 +24,7 @@ body * {
 .subtitles {
   font-size: 36px;
   margin: 20px;
-  color: #e66b00; }
+  color: #f6a700; }
 
 h1 {
   margin: 20px 0px 40px 25px; }
@@ -65,14 +66,16 @@ h1 {
   display: flex;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  position: relative; }
+  position: relative;
+  margin: 30px 0; }
 
 .card {
   border: grey solid 2px;
   flex: 0 0 auto;
   width: 70%;
   margin-right: 20px;
-  position: relative; }
+  position: relative;
+  height: 450px; }
 
 .card__img {
   max-height: 100%;
@@ -81,7 +84,7 @@ h1 {
 
 .card__image {
   width: 100%;
-  height: 350px;
+  height: 50%;
   overflow: hidden;
   background-color: grey; }
 
@@ -100,11 +103,12 @@ h1 {
   content: ""; }
 
 .card:hover {
-  border: #e66b00 solid 5px;
+  border: #f6a700 solid 5px;
   cursor: pointer; }
 
 .card__info {
   width: 90%;
+  height: 30%;
   padding: 15px; }
 
 .card__info--name {
@@ -125,8 +129,8 @@ h1 {
   padding: 3px;
   font-weight: bold;
   border-radius: 0 3px 3px 0;
-  background-color: #e66b00;
-  border-color: #e66b00;
+  background-color: #f6a700;
+  border-color: #f6a700;
   color: white;
   opacity: .7;
   z-index: 3; }
@@ -182,7 +186,7 @@ h1 {
 
 @media (min-width: 1024px) {
   .card {
-    width: 20%; }
+    width: 25%; }
   .carousel__arrow--next::before {
     content: url(./../../images/iconos/arrow-right.svg); }
   .carousel__arrow--previous::before {
@@ -372,11 +376,11 @@ h1 {
   width: fit-content; }
 
 .darkButton {
-  background-color: #e66b00;
+  background-color: #f6a700;
   color: white;
   padding: 12px 24px;
   border-radius: 10px;
-  border: solid #e66b00;
+  border: solid #f6a700;
   border-width: thin;
   margin: 10px 0;
   font-family: 'Roboto';
@@ -406,7 +410,7 @@ h1 {
   text-align: center; }
 
 .darkButton:hover {
-  background-color: #fa8620f5; }
+  background-color: #af7800; }
 
 .lightButton:hover {
   background-color: #D9D9D9; }
@@ -428,8 +432,7 @@ h1 {
   margin-top: 50px;
   width: 100%;
   color: white;
-  background-color: #32cd32;
-  margin-bottom: 50px; }
+  background-color: #40752A; }
 
 .footer {
   max-width: 85%;
@@ -448,7 +451,7 @@ h1 {
   margin: 0 auto;
   border: none;
   padding: 10px 8px;
-  background-color: #32cd32;
+  background-color: #40752A;
   color: white;
   font-weight: 700;
   display: block; }
@@ -600,7 +603,7 @@ h1 {
   gap: 51px;
   justify-content: space-evenly;
   list-style: none;
-  background-color: #32cd32;
+  background-color: #40752A;
   align-items: center; }
 
 .menu__link {
@@ -692,7 +695,7 @@ h1 {
   margin-top: 0;
   border-width: 2px;
   border-top-width: 10px;
-  border-top-color: #e66b00;
+  border-top-color: #f6a700;
   border-bottom-color: white;
   background: white; }
 
@@ -704,13 +707,13 @@ h1 {
   margin: 10px;
   padding: 4px 6px;
   font-size: 20px;
-  color: #e66b00; }
+  color: #f6a700; }
 
 [role="tab"]:hover span.focus,
 [role="tab"]:focus span.focus,
 [role="tab"]:active span.focus {
   padding: 2px 4px;
-  border: 3px solid #e66b00;
+  border: 3px solid #f6a700;
   border-radius: 4px; }
 
 [role="tabpanel"] {

@@ -31,7 +31,7 @@
   margin-top: 0;
   border-width: 2px;
   border-top-width: 10px;
-  border-top-color: #e66b00;
+  border-top-color: $second__color;
   border-bottom-color: white;
   background: white;
 }
@@ -45,14 +45,14 @@
   margin: 10px;
   padding: 4px 6px;
   font-size: 20px;
-  color: #e66b00;
+  color: $second__color;
 }
 
 [role="tab"]:hover span.focus,
 [role="tab"]:focus span.focus,
 [role="tab"]:active span.focus {
   padding: 2px 4px;
-  border: 3px solid #e66b00;
+  border: 3px solid $second__color;
   border-radius: 4px;
 }
 
