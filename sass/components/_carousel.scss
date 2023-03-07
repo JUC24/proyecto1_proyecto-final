@@ -7,7 +7,7 @@
   padding: 0 20px 0 80px;
   display: flex;
   overflow-x: hidden;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
   position: relative;
 }
 
@@ -17,6 +17,12 @@
   width: 70%;
   margin-right: 20px;
   position: relative;
+}
+
+.card__img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 .card__image {
@@ -43,7 +49,7 @@
 }
 
 .card:hover {
-  border: black solid 3px;
+  border: #e66b00 solid 5px;
   cursor: pointer;
 }
 
@@ -54,7 +60,7 @@
 
 .card__info--name {
   font-size: 24px;
-	margin: 10px 0;
+  margin: 10px 0;
 }
 
 .card__info--description {
@@ -72,9 +78,10 @@
   padding: 3px;
   font-weight: bold;
   border-radius: 0 3px 3px 0;
-  background-color: black;
+  background-color: #e66b00;
+  border-color: #e66b00;
   color: white;
-  opacity: .3;
+  opacity: .7;
   z-index: 3;
 }
 
@@ -85,7 +92,8 @@
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-  width: 1px; }
+  width: 1px;
+}
 
 .carousel__arrow--next::before {
   content: url(./../../images/iconos/chevron-right-small.svg);
@@ -96,7 +104,7 @@
 }
 
 .carousel__arrow--next {
-  right: 0;  
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
 
@@ -141,25 +149,25 @@
     width: 90%;
   }
 
-	.carousel__arrow--next::before {
-		content: url(./../../images/iconos/chevron-right-medium.svg);
-	}
-	
-	.carousel__arrow--previous::before {
-		content: url(./../../images/iconos/chevron-left-medium.svg);
-	}
+  .carousel__arrow--next::before {
+    content: url(./../../images/iconos/chevron-right-medium.svg);
+  }
+
+  .carousel__arrow--previous::before {
+    content: url(./../../images/iconos/chevron-left-medium.svg);
+  }
 }
 
 @media (min-width:1024px) {
-	.card {
+  .card {
     width: 20%;
   }
-	
-	.carousel__arrow--next::before {
-		content: url(./../../images/iconos/arrow-right.svg);
-	}
-	
-	.carousel__arrow--previous::before {
-		content: url(./../../images/iconos/arrow-left.svg);
-	}
+
+  .carousel__arrow--next::before {
+    content: url(./../../images/iconos/arrow-right.svg);
+  }
+
+  .carousel__arrow--previous::before {
+    content: url(./../../images/iconos/arrow-left.svg);
+  }
 }
